@@ -10,7 +10,6 @@
 %hook _TtCC16MusicApplication23PaletteTabBarController23PaletteVisualEffectView
 -(void)didMoveToWindow {
     %orig;
-    // self.layer.continuousCorners = YES;
     [self.layer setContinuousCorners:YES];
     self.layer.cornerRadius = 10.0;
 }
